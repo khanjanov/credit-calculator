@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  .wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 12px;
+    background: linear-gradient(217deg, #833471, rgba(255, 0, 0, 0) 70.71%),
+      linear-gradient(127deg, #0984e3, rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, #00b894, rgba(0, 0, 255, 0) 70.71%);
+    &__top {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &__title {
+        color: #09528a;
+        font-size: 24px;
+      }
+      &__info {
+        width: 100%;
+        form {
+          display: flex;
+          gap: 12px;
+          input {
+            outline: none;
+            border: none;
+            border-radius: 8px;
+          }
+          #select {
+            outline: none;
+            border-radius: 8px;
+            color: #553d4f;
+          }
+          button {
+            border: none;
+            padding: 8px;
+            color: #fff;
+            border-radius: 8px;
+          }
+          #calculate {
+            background-color: #00b894;
+          }
+          #clear {
+            background-color: rgb(243, 96, 96);
+          }
+        }
+      }
+    }
+    &__bottom {
+      gap: 20px;
+      padding: 12px;
+      &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 40px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        &--card {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+            rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          padding: 12px;
+          border: none;
+          border-radius: 8px;
+          color: #09528a;
+        }
+      }
+    }
+  }
+}
